@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html> <!-- html: Contains the entire website -->
-<head> 
-  <title>My First Website</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cullan Wick | Personal Website</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body> <!-- where all visible content goes -->
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-black min-h-screen text-white">
+  <header class="flex flex-col items-center justify-center py-12">
+    <img src="https://avatars.githubusercontent.com/u/your-github-id?v=4" alt="Cullan Wick" class="w-32 h-32 rounded-full shadow-lg border-4 border-purple-500 mb-4">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">Cullan Wick</h1>
+    <p class="text-lg md:text-xl text-gray-300">Web Developer | Designer | Creator</p>
+    <nav class="mt-6 flex gap-6">
+      <a href="#about" class="hover:text-purple-400 transition">About</a>
+      <a href="#projects" class="hover:text-purple-400 transition">Projects</a>
+      <a href="#contact" class="hover:text-purple-400 transition">Contact</a>
+    </nav>
+  </header>
+  <main class="max-w-3xl mx-auto px-4">
+    <section id="about" class="mb-16">
+      <h2 class="text-2xl font-bold mb-4 text-purple-400">About Me</h2>
+      <p class="text-gray-200 leading-relaxed">Hi! I'm Cullan, a passionate web developer who loves building beautiful, performant, and accessible websites. I enjoy working with modern web technologies and creating delightful user experiences.</p>
+    </section>
+    <section id="projects" class="mb-16">
+      <h2 class="text-2xl font-bold mb-4 text-purple-400">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold mb-2">Awesome Project 1</h3>
+          <p class="text-gray-300 mb-2">A brief description of your project goes here. Highlight what makes it cool!</p>
+          <a href="#" class="text-purple-400 hover:underline">View on GitHub</a>
+        </div>
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6 hover:scale-105 transition-transform">
+          <h3 class="text-xl font-semibold mb-2">Awesome Project 2</h3>
+          <p class="text-gray-300 mb-2">Another project description. Show off your skills and creativity!</p>
+          <a href="#" class="text-purple-400 hover:underline">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="mb-16">
+      <h2 class="text-2xl font-bold mb-4 text-purple-400">Contact</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500">
+        <textarea placeholder="Your Message" class="w-full px-4 py-2 rounded bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded text-white font-semibold transition">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer class="text-center py-6 text-gray-500 text-sm">
+    &copy; 2025 Cullan Wick. All rights reserved.
+  </footer>
+</body>
+</html>
 
   <h1>My Awesome Portfolio</h1>
   <p>Welcome! This is my very first website.</p>
