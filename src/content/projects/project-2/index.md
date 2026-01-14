@@ -1,15 +1,27 @@
 ---
-title: "Project Two"
-summary: "Lorem ipsum dolor sit amet"
-date: "Mar 17 2022"
+title: "Personal Portfolio & Blog"
+summary: "A minimalist, lightning-fast portfolio built with Astro's Island Architecture for maximum performance."
+date: "Jan 14 2026"
 draft: false
 tags:
-- Svelte
-- Sveltekit
-- Typescript
-- Tailwind
+- Astro
+- TypeScript
+- Tailwind CSS
+- JavaScript
+demoUrl: "https://cullan-wick.github.io/"
+repoUrl: https://github.com/cullan-wick/cullan-wick.github.io
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+This website serves as my digital garden and professional portfolio. Built on the **Astrosphere** template, it prioritizes performance, accessibility, and a minimalist aesthetic over heavy client-side complexity.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+### ⚡️ The Architecture
+
+Unlike traditional Single Page Applications (SPAs) that ship large JavaScript bundles to the client, this site leverages **Astro**:
+
+*   **Static Site Generation (SSG):** The site is pre-rendered into HTML at build time, ensuring near-instant load times and optimal SEO.
+*   **Zero JavaScript Runtime:** By default, Astro strips away all JavaScript, sending only HTML and CSS to the browser.
+*   **Island Architecture:** Interactive elements are isolated as "islands." JavaScript is only hydrated exactly where it is needed, keeping the main thread free.
+
+### 🎨 Design System
+
+The UI is built with **Tailwind CSS**, utilizing a utility-first approach to maintain consistency in spacing, typography, and color without writing bloated stylesheets. The result is a lightweight, responsive interface that achieves perfect Lighthouse performance scores.
