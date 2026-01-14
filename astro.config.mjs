@@ -7,12 +7,5 @@ import solidJs from "@astrojs/solid-js"
 // https://astro.build/config
 export default defineConfig({
   site: "https://cullan-wick.github.io",
-  integrations: [
-    mdx(), 
-    sitemap({
-      filter: (page) => true,
-    }), 
-    solidJs(), 
-    tailwind({ applyBaseStyles: false })
-  ],
+  integrations: [mdx(), solidJs(), tailwind({ applyBaseStyles: false })],
 })
